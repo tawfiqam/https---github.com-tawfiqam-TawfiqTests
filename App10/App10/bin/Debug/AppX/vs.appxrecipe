@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ZW6353585</Machine>
+    <WindowsUser>t-taamma</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>55d33ba7-032e-4df7-a0f1-620825a2cec3</PackageIdentityName>
+    <RegisteredManifestChecksum>D1A8E37BAAF9F12785DAC5F61D72B18D249BD333564597A39CBCA5BB14FD1ED7</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>55d33ba7-032e-4df7-a0f1-620825a2cec3_1.0.0.0_neutral__b4zwy9b9b53gy</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>55d33ba7-032e-4df7-a0f1-620825a2cec3_b4zwy9b9b53gy!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>55d33ba7-032e-4df7-a0f1-620825a2cec3</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=t-taamma</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\t-taamma\documents\visual studio 2013\Projects\App10\App10\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-06-04T23:23:16.508</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2013\Projects\App10\App10\bin\Debug\App10.exe">
+      <PackagePath>App10.exe</PackagePath>
+      <Modified>2016-06-04T23:27:30.632</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2013\Projects\App10\App10\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2013\Projects\App10\App10\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2013\Projects\App10\App10\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2013\Projects\App10\App10\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2013\Projects\App10\App10\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2016-06-04T23:23:16.180</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2013\Projects\App10\App10\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2016-06-04T23:26:32.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2013\Projects\App10\App10\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-06-04T23:23:16.421</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
