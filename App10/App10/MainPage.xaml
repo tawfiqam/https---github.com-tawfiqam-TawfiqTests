@@ -11,10 +11,12 @@
 
         <StackPanel Orientation="Vertical" Margin="20,50" HorizontalAlignment="Center">
 
-            <TextBlock x:Name="TimerLog" FontSize="30"></TextBlock>
+            <TextBlock x:Name="TimerLog" FontSize="30" SelectionChanged="TimerLog_SelectionChanged"></TextBlock>
 
             <TextBlock x:Name="TimerStatus" FontSize="25"></TextBlock>
 
+            <TextBlock x:Name="TimerLeft" FontSize="30" SelectionChanged="TimerLeft_SelectionChanged"></TextBlock>
+            
             <StackPanel Orientation="Horizontal">
 
                 <Button x:Name="TimerStart" Content="Start" Click="TimerStart_Click_1"></Button>
