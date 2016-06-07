@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="360*"/>
+            <RowDefinition Height="31*"/>
+        </Grid.RowDefinitions>
+        <MediaElement x:Name="media" HorizontalAlignment="Left" Height="350" Margin="141,0,0,0" VerticalAlignment="Top" Width="499"/>
+        <Button x:Name="ladybug" Content="LadyBug Vid" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126" Click="ladybug_Click"/>
+        <Button x:Name="fishes" Content="Fishes Vid" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126" Click="fishes_Click"/>
+        <Button x:Name="lastvid" Content="Last Vid" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126"/>
+        <Button x:Name="btnpause" Content="Pause" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126" Click="btnpause_Click"/>
+        <Button x:Name="btnplay" Content="Play" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126" Click="btnplay_Click"/>
+    </Grid>
+</Page>
