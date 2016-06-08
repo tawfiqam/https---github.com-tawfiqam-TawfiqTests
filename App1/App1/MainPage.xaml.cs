@@ -28,6 +28,11 @@ namespace App1
         public MainPage()
         {
             this.InitializeComponent();
+
+            dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Stop();
+            dispatcherTimer.Tick += dispatcherTimer_Tick;
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
         }
 
         DispatcherTimer dispatcherTimer;               //maybe we should try to get a public variable here so we can check it throughout
@@ -40,6 +45,7 @@ namespace App1
 
         int minuteDiff = 60;
 
+       // static private DispatcherTimer dispatcherTimer;
         public static class Globals
         {
             public static DateTime StartTime { get; set; }
@@ -50,18 +56,13 @@ namespace App1
             public static int acc30 { get; set; }
             public static DateTime Today { get; }
         }
-
-        public void DispatcherTimerSetup()
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        public void StartTimer()
         {
-
-            dispatcherTimer = new DispatcherTimer();
-
-            dispatcherTimer.Tick += dispatcherTimer_Tick;
-
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
-
             dispatcherTimer.Start();
-
         }
 
 
@@ -91,7 +92,10 @@ namespace App1
             StorageFile mediafile = await Folder.GetFileAsync("ladybug.wmv");
             media.SetSource(await mediafile.OpenAsync(FileAccessMode.Read), mediafile.ContentType);
             media.Play();
-            DispatcherTimerSetup();
+            StartTimer();
+            if (dispatcherTimer.IsEnabled)
+            { return; }
+            dispatcherTimer.Start();
             WriteLog("Start ladybug ");
         }
 
@@ -102,16 +106,17 @@ namespace App1
             StorageFile mediafile = await Folder.GetFileAsync("fishes.wmv");
             media.SetSource(await mediafile.OpenAsync(FileAccessMode.Read), mediafile.ContentType);
             media.Play();
+            StartTimer();
             if (dispatcherTimer.IsEnabled)
                 { return; }
-            DispatcherTimerSetup();
+            dispatcherTimer.Start();
             WriteLog("Start fishes " + Globals.Today.ToString());
         }
 
         private void btnplay_Click(object sender, RoutedEventArgs e)
         {
             media.Play();
-            WriteLog("Play video " + Globals.Today.ToString());
+            WriteLog("Play video");
             dispatcherTimer.Start();
            
         }
@@ -119,7 +124,7 @@ namespace App1
         private void btnpause_Click(object sender, RoutedEventArgs e)
         {
             media.Pause();
-            WriteLog("Pause " + Globals.Today.ToString());
+            WriteLog("Pause");
             dispatcherTimer.Stop();
             
         }
@@ -128,8 +133,9 @@ namespace App1
         {
             // Create sample file; create new.
             Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-            Windows.Storage.StorageFile logfile = await storageFolder.CreateFileAsync("Log.txt", Windows.Storage.CreationCollisionOption.GenerateUniqueName);
+            Windows.Storage.StorageFile logfile = await storageFolder.CreateFileAsync("Log.txt", Windows.Storage.CreationCollisionOption.ReplaceExisting);
             await Windows.Storage.FileIO.WriteTextAsync(logfile, Msg);
+
         }
 
       
