@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -29,6 +30,16 @@ namespace App1
             this.InitializeComponent();
         }
 
+        DispatcherTimer dispatcherTimer;               //maybe we should try to get a public variable here so we can check it throughout
+
+        int timesTicked = 1;
+
+        int timesToTick = 3600;                       //This is the limit we will set for the use of the app, in this case, 1 hour
+
+        int minutesToGo = 3600;                        //60 minutes
+
+        int minuteDiff = 60;
+
         public static class Globals
         {
             public static DateTime StartTime { get; set; }
@@ -38,16 +49,40 @@ namespace App1
             public static int acc15 { get; set; }
             public static int acc30 { get; set; }
             public static DateTime Today { get; }
-            public static DispatcherTimer ds { get; set; }
-
         }
 
-        private void SetUpTimer()
+        public void DispatcherTimerSetup()
         {
-            Globals.ds.Interval = new TimeSpan(0, 1, 0);
-            Globals.ds.Tick += ds_Tick;
+
+            dispatcherTimer = new DispatcherTimer();
+
+            dispatcherTimer.Tick += dispatcherTimer_Tick;
+
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+
+            dispatcherTimer.Start();
+
         }
 
+
+        void dispatcherTimer_Tick(object sender, object e)
+        {
+            minuteDiff = (minutesToGo - timesTicked) / 60;
+            TimerLeft.Text = minuteDiff.ToString();
+            Seconds.Text = timesTicked.ToString();
+
+            if (timesTicked > timesToTick)
+            {
+
+                dispatcherTimer.Stop();
+            }
+
+            timesTicked++;
+
+        }
+        
+
+       
         private async void ladybug_Click(object sender, RoutedEventArgs e)
         {
 
@@ -56,7 +91,8 @@ namespace App1
             StorageFile mediafile = await Folder.GetFileAsync("ladybug.wmv");
             media.SetSource(await mediafile.OpenAsync(FileAccessMode.Read), mediafile.ContentType);
             media.Play();
-            WriteLog("Start ladybug "); 
+            DispatcherTimerSetup();
+            WriteLog("Start ladybug ");
         }
 
         private async void fishes_Click(object sender, RoutedEventArgs e)
@@ -66,6 +102,9 @@ namespace App1
             StorageFile mediafile = await Folder.GetFileAsync("fishes.wmv");
             media.SetSource(await mediafile.OpenAsync(FileAccessMode.Read), mediafile.ContentType);
             media.Play();
+            if (dispatcherTimer.IsEnabled)
+                { return; }
+            DispatcherTimerSetup();
             WriteLog("Start fishes " + Globals.Today.ToString());
         }
 
@@ -73,12 +112,16 @@ namespace App1
         {
             media.Play();
             WriteLog("Play video " + Globals.Today.ToString());
+            dispatcherTimer.Start();
+           
         }
 
         private void btnpause_Click(object sender, RoutedEventArgs e)
         {
             media.Pause();
             WriteLog("Pause " + Globals.Today.ToString());
+            dispatcherTimer.Stop();
+            
         }
 
         private async void WriteLog(string Msg)
@@ -89,6 +132,7 @@ namespace App1
             await Windows.Storage.FileIO.WriteTextAsync(logfile, Msg);
         }
 
-        
+      
     }
+
 }

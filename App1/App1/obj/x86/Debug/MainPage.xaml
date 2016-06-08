@@ -18,7 +18,9 @@
         <Button x:ConnectionId='4' x:Name="lastvid" Content="Last Vid" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126"/>
         <Button x:ConnectionId='5' x:Name="btnpause" Content="Pause" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126"                       />
         <Button x:ConnectionId='6' x:Name="btnplay" Content="Play" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126"                      />
-        <TimePicker x:ConnectionId='7' x:Name="MyTime" HorizontalAlignment="Left" Margin="714,29,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='7' x:Name="TimerLeft" HorizontalAlignment="Left" Margin="735,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="101" Width="85" FontSize="72"/>
+        <TextBlock x:ConnectionId='8' x:Name="Seconds" HorizontalAlignment="Left" Margin="735,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="101" Width="85" FontSize="72"/>
+        <TextBlock x:ConnectionId='9' x:Name="ShowMinutes" HorizontalAlignment="Left" Margin="825,31,0,0" TextWrapping="Wrap" Text="Minutes to go!" VerticalAlignment="Top" Height="101" Width="530" FontSize="72"/>
     </Grid>
 </Page>
 

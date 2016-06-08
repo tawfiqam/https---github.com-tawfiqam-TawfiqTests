@@ -9,16 +9,16 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f219908b-0d76-4ada-a20c-d1d9e789c4ba</PackageIdentityName>
-    <IntermediateOutputPath>c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\App1.exe">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\App1.exe">
       <PackagePath>entrypoint\App1.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-taamma\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -339,55 +339,55 @@
     <AppxPackagedFile Include="C:\Users\t-taamma\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\fishes.wmv">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\fishes.wmv">
       <PackagePath>Assets\fishes.wmv</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\ladybug.wmv">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\ladybug.wmv">
       <PackagePath>Assets\ladybug.wmv</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\App1.xr.xml">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\App1.xr.xml">
       <PackagePath>App1.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\Core\App1.exe">
+    <AppxPackagedFile Include="C:\Users\t-taamma\documents\visual studio 2015\Projects\App1\App1\bin\x86\Debug\Core\App1.exe">
       <PackagePath>App1.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
