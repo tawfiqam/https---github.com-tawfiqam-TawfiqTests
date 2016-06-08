@@ -18,5 +18,6 @@
         <Button x:Name="lastvid" Content="Last Vid" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126"/>
         <Button x:Name="btnpause" Content="Pause" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126" Click="btnpause_Click"/>
         <Button x:Name="btnplay" Content="Play" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.718,-0.458" Height="61" Width="126" Click="btnplay_Click"/>
+        <TimePicker x:Name="MyTime" HorizontalAlignment="Left" Margin="714,29,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
     </Grid>
 </Page>
